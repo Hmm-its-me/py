@@ -3,11 +3,17 @@ import random
 
 def guess_number(x):
     The_num = random.randint(1,x)
+    if(x<=10):
+        print("Lol this is to small range you shouldn't take more than 3 attempts 😂")
+    elif(x<=100):
+        print("This is an ideal range hope you will guess in less than 8 attempts 🙂")
+    else:
+        print("Ohh..my, The range is big you should try your luck..🥵")
     user_guess = 0
     count = 0
     while(user_guess != The_num):
         if(count==0):
-            print(f"Hello, I hope you are very excited for your first guess 🌠 ")
+            print(f"Okk, we will start... I hope you are very excited for your first guess 🌠 ")
         else:
             print(f"This is your {count+1} attempt, please tell your number:")
         user_guess = float(input())
