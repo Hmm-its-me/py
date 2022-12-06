@@ -6,13 +6,21 @@ def guess_number(x):
     user_guess = 0
     count = 0
     while(user_guess != The_num):
-        user_guess = int(input())
+        if(count==0):
+            print(f"Hello Are you excited for your first guess 🌠 ")
+        else:
+            print(f"This is your {count+1} attempt, please tell your number:")
+        user_guess = float(input())
         count += 1
         if(user_guess==The_num):
-            print(f"congrats you guessed the number correctly in {count} attempts")
+            print(f"congrats you guessed the number correctly 🥳 you took {count} attempts")
         elif(user_guess>The_num):
-            print("oops you guessed too big 😒")
+            print("oops you guessed too big 😒 ")
         else:
             print("oops 🥲 you guessed too small")
 
+
+
+guess_number(100)
+        
 
