@@ -1,0 +1,4 @@
+{
+    "vim.useSystemClipboard": true,
+    "python.analysis.typeCheckingMode": "basic"
+}
