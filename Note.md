@@ -1,4 +1,13 @@
-# Notes...
+# Notes
+
+conda create --name "Name..." python=3.x  (if we want a specific version instead of the latest.
+in diff envs when we install diff packages using pip or..etc the packages will get installed based on the python version in that environment.
+
+conda activate "Name of env"
+conda deactivate
+
+-> To completely remove an env we created...
+conda env remove -n "Name of the env we want to remove..."
 
 ## lists
 
@@ -10,7 +19,7 @@ if "xyz" in mylist: -> To check if anything is in our list (mylist)
 .remove("xyz") -> Only removes the first occurence of "xyz" in the list
 .clear()  -> To erase the whole list.
 .reverse() -> To Reverse the order of whole list
-.sort()  -> To sort the whole list as per dictionary or integers...if 2 types 
+.sort()  -> To sort the whole list as per dictionary or integers...if 2 types
             are present inside the list then, it will give error.
             Sorts inplace (means changes our list to sorted list completely)
 
@@ -21,7 +30,7 @@ a = mylist[a:b]  -> a = all values in list from index a to b-1;
 a = mylist[:]    -> a = all values from start to end;
 a = mylist[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c';
 
-## To copy a list (We should not use "=" to create a copy).
+## To copy a list (We should not use "=" to create a copy)
 
 list_cpy = mylist.copy()
 list_cpy = list(mylist)
@@ -30,6 +39,12 @@ list_cpy = mylist[:]
 List comprehension [expression and loop our list to make changes...]
 l1 = [1,2,3,4,5,6]
 l2 = [i*i for i in l1]
+
+# Tuples
+
+
+
+
 
 
 

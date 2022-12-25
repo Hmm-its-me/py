@@ -80,6 +80,6 @@ def computer_guess(y, x):
     
 
 computer_guess(1, 1000)
-# guess_number(1000)
+guess_number(1000)
 
 

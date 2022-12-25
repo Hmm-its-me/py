@@ -1,5 +1,5 @@
 # hjkl -> Navigation.
-# iIaA -> Editing in a line (from command mode to insert mode...) 
+# iIaA -> Editing in a line (from command mode to insert mode...)
 # xr -> To del, replace characters.
 
 print("Hello world")
@@ -15,7 +15,7 @@ print(mylist[-1])
 for i in mylist:
     print(i)
 
-if("Banana" in mylist):
+if ("Banana" in mylist):
     print("YES")
 else:
     print("NO")
@@ -24,7 +24,7 @@ mylist.append("Lemon")
 
 print(len(mylist))
 
-mylist.insert(1,"Blue Berry")
+mylist.insert(1, "Blue Berry")
 
 for i in (mylist):
     print(i)
@@ -68,14 +68,7 @@ print(mylist)
 # It changes the original list also.
 
 # List comprehension [expression and loop our list to make changes...]
-l1 = [1,2,3,4,5,6]
+l1 = [1, 2, 3, 4, 5, 6]
 l2 = [i*i for i in l1]
 
 print(l1, " ", l2)
-
-
-
-
-
-
-
