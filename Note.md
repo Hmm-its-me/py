@@ -1,6 +1,7 @@
 # Notes...
 
-1. lists
+## lists
+
 list()
 mylist[-1] -> Last element
 if "xyz" in mylist: -> To check if anything is in our list (mylist)
