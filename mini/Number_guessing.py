@@ -1,5 +1,9 @@
 import random
 
+# hjkl -> Navigation.
+# iIaA -> Editing in a line (from command mode to insert mode...) 
+# xr -> To del, replace characters.
+
 
 def guess_number(x):
     The_num = random.randint(1,x)
