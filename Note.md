@@ -31,7 +31,7 @@ a = mylist[a:b]  -> a = all values in list from index a to b-1;
 a = mylist[:]    -> a = all values from start to end;
 a = mylist[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c'; by default c = 1
 
-## To copy a list (We should not use "=" to create a copy)
+## Copying a list (We should not use "=" to create a copy)
 
 list_cpy = mylist.copy()
 list_cpy = list(mylist)
@@ -58,6 +58,7 @@ a = mytuple[:]    -> a = all values from start to end;
 a = mytuple[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c'; by default c = 1
 
 ## Unpacking in tuples (number of vars on left side must be = len(mytuple))
+
 mytuple = (1,2,3,4,4,4,4,5,6,7,7,7,7,8)
 name, age, city = "Max", 28, "ongole"
 i1, *i2, i3 = mytuple
@@ -71,6 +72,17 @@ print(sys.getsizeof(mytuple))
 For the same elements tuple will take less space and is more
 Faster to iterate in a tuple than a list
 
+# Numpy
 
+If module import error is comming and
+when try to install numpy using
+pip3 install numpy   -> it is showing
+requirement already satisfied....
+
+Then used this command in the terminal(powershell) and it worked ->
+
+## python -mpip install numpy
+
+The Numpy library provides specialized data structures, functions, and other tools for numerical computing in Python.
 
 
