@@ -85,4 +85,8 @@ Then used this command in the terminal(powershell) and it worked ->
 
 The Numpy library provides specialized data structures, functions, and other tools for numerical computing in Python.
 
+Numpy operations and functions are implemented internally in C++, which makes them much faster than using Python statements & loops that are interpreted at runtime.
+
+.dot(a1,a2) -> Gives dot product (integer) of ndarrays a1,a2;
+.sum()      -> Gives sum of elements present in the ndarray
 
