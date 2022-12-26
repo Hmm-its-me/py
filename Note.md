@@ -89,4 +89,15 @@ Numpy operations and functions are implemented internally in C++, which makes th
 
 .dot(a1,a2) -> Gives dot product (integer) of ndarrays a1,a2;
 .sum()      -> Gives sum of elements present in the ndarray
+.matmul(a1,a2) or a1@a2 -> Gives the resulting matrix which comes by multiplying a1 with a2;
 
+
+To find the shape of an numpy array go from the outermost brackets
+to inside by counting no.of arrays at each stage...
+
+At each stage the no.of elements must be equal otherwise it will give
+value Error -> inhomogeneous shape after x stage...
+
+## Note that a2 has to be in proper shape, otherwise we need to use a2.reshape(x,y)
+
+a3 = np.concatenate((a1, a2), axis=0)
