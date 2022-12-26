@@ -11,6 +11,7 @@ conda env remove -n "Name of the env we want to remove..."
 
 ## lists
 
+Lists -> Ordered, mutable, allows duplicate elements
 list()
 mylist[-1] -> Last element
 if "xyz" in mylist: -> To check if anything is in our list (mylist)
@@ -28,7 +29,7 @@ mylist = curr_list * 5    -> To make our list bigger by x times by repeating our
 
 a = mylist[a:b]  -> a = all values in list from index a to b-1;
 a = mylist[:]    -> a = all values from start to end;
-a = mylist[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c';
+a = mylist[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c'; by default c = 1
 
 ## To copy a list (We should not use "=" to create a copy)
 
@@ -42,13 +43,33 @@ l2 = [i*i for i in l1]
 
 # Tuples
 
+Tuples -> Ordered, immutable, allows duplicate elements
+Similar to list, but it can not be changed after creation
 
+We can not assign any new value to/in our tuple
+mytuple[0] = "not hello" -> It will give assignment not possible error.
 
+len(mytuple) -> gives the length
+mytuple.count("xyz") -> Gives no.of non-overlapping "xyz" strings present.
+mytuple.index("xyz") -> Gives (0 based) index of first occurence of "xyz"
 
+a = mytuple[a:b]  -> a = all values in list from index a to b-1;
+a = mytuple[:]    -> a = all values from start to end;
+a = mytuple[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c'; by default c = 1
 
+## Unpacking in tuples (number of vars on left side must be = len(mytuple))
+mytuple = (1,2,3,4,4,4,4,5,6,7,7,7,7,8)
+name, age, city = "Max", 28, "ongole"
+i1, *i2, i3 = mytuple
+i1 = 1
+i3 = 8
+And all the elements in between as a list
+i2 = [2, 3, 4, 4, 4, 4, 5, 6, 7, 7, 7, 7] -> A list
 
-
-
+print(sys.getsizeof(mylist))
+print(sys.getsizeof(mytuple))
+For the same elements tuple will take less space and is more
+Faster to iterate in a tuple than a list
 
 
 
