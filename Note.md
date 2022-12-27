@@ -72,6 +72,34 @@ print(sys.getsizeof(mytuple))
 For the same elements tuple will take less space and is more
 Faster to iterate in a tuple than a list
 
+# Dictionary
+
+## Any immutable type can be used as a key in the dictionary
+
+-> Like ints, strings, even tuples... but not lists.
+
+Dictionary -> Key-Value pairs, mutable, ordered.
+m1 = {"name": "Suraj", "Age": 19, "City": "Ongole"}
+
+print(m1["name"])
+-> Mutable, so we can add a new key-value pair
+m1["new pair"] = "value"
+
+.pop("xyz") -> Give key that needs to be deleted.
+.popitem()  -> Removes the last item of the dictionary.
+del m1["xyz"] -> deleted the key "xyz" present in m1
+val = m1["pqr"] -> Returns the value of the key "pqr" and assigns it to val
+m1.update(m2)  -> Updates the same keys with values of m2, and also adds 
+                  keys that are not initially in m1 but in m2
+
+## Copying a dictionary (We should not use "=" to create a copy)
+
+dict_cpy = m1.copy()
+dict_cpy = dict(m1)
+
+
+
+
 # Numpy
 
 If module import error is comming and
