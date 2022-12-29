@@ -9,6 +9,17 @@ conda deactivate
 -> To completely remove an env we created...
 conda env remove -n "Name of the env we want to remove..."
 
+
+-> pip install pre-commit
+-> Now once check the version using
+pre-commit --version
+
+-> create a .pre-commit-config.yaml file
+-> Use the command
+"pre-commit install"
+-> To check whether it is installed at  -> git\hooks\pre-commit
+
+
 ## lists
 
 Lists -> Ordered, mutable, allows duplicate elements
@@ -89,7 +100,7 @@ m1["new pair"] = "value"
 .popitem()  -> Removes the last item of the dictionary.
 del m1["xyz"] -> deleted the key "xyz" present in m1
 val = m1["pqr"] -> Returns the value of the key "pqr" and assigns it to val
-m1.update(m2)  -> Updates the same keys with values of m2, and also adds 
+m1.update(m2)  -> Updates the same keys with values of m2, and also adds
                   keys that are not initially in m1 but in m2
 
 ## Copying a dictionary (We should not use "=" to create a copy)
