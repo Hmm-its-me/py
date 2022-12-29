@@ -1,4 +1,5 @@
 import numpy as np
+
 # Aliasing numpy as np
 
 a1 = np.array([[1, 2, 3]])
@@ -11,21 +12,17 @@ a3 = np.dot(a1, a2)
 print(a3)
 
 # We can do like this also...
-a4 = a1*a2
+a4 = a1 * a2
 print(a4, " ", a4.sum())
 
 # Multi dimensional arrays...
-b1 = np.array([[1, 2, 3],
-              [4, 5, 6],
-              [7, 8, 9],
-              [10, 11, 12]])
+b1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
 print(b1, " ", b1.shape, " ", b1.size)
 
 # To find the shape of an numpy array go from the outermost brackets
 # to inside by counting no.of arrays at each stage...
 print("\n")
-c1 = np.array([[[1, 2, 3], [4, 5, 6]],
-               [[1, 1, 1], [2, 2, 2]],
+c1 = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 1, 1], [2, 2, 2]],
                [[5, 6, 7], [8, 9, 10]]])
 print(c1, " ", c1.shape, " ", c1.size)
 

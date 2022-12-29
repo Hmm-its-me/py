@@ -15,7 +15,7 @@ print(mylist[-1])
 for i in mylist:
     print(i)
 
-if ("Banana" in mylist):
+if "Banana" in mylist:
     print("YES")
 else:
     print("NO")
@@ -26,7 +26,7 @@ print(len(mylist))
 
 mylist.insert(1, "Blue Berry")
 
-for i in (mylist):
+for i in mylist:
     print(i)
 
 last = mylist.pop()
@@ -43,13 +43,11 @@ print(mylist)
 mylist.append("3")
 mylist.append("0")
 
-
 mylist2.append(2)
 mylist2.append("here")
 
 mylist.sort()
 print(mylist, " ", mylist2)
-
 
 mylist *= 3
 print(mylist)
@@ -57,7 +55,6 @@ print(mylist)
 mylist += mylist2
 print(mylist)
 print(mylist2)
-
 
 list_cpy = mylist
 list_cpy.append("Appending in the copy")
@@ -69,6 +66,6 @@ print(mylist)
 
 # List comprehension [expression and loop our list to make changes...]
 l1 = [1, 2, 3, 4, 5, 6]
-l2 = [i*i for i in l1]
+l2 = [i * i for i in l1]
 
 print(l1, " ", l2)

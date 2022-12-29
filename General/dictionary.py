@@ -26,7 +26,6 @@ try:
 except:
     print("Key not found...")
 
-
 for i in m1:
     print(i, " ", m1[i])
 
@@ -40,7 +39,6 @@ for i in m1.keys():
 
 for i in m1.values():
     print(i)
-
 
 m1 = {"Name": "Suraj", "City": "Ongole", "Age": 19, "lol": "😂"}
 m2 = {"Name": "Hacker", "City": "Hacks", "Age": 27, "New": 729}

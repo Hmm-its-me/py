@@ -1,15 +1,15 @@
 import sys
+
 mytuple = ("hello", "world", 123)
 print(type(mytuple))
 print(mytuple)
 
-mytuple2 = ("just one entry")
+mytuple2 = "just one entry"
 print(type(mytuple2))
 print(mytuple2)
 
 mytuple2 = ("one entry with comma", )
 print(type(mytuple))
-
 
 mytuple3 = tuple([1, 2, 3, "from a list"])
 print(mytuple3)
@@ -17,12 +17,10 @@ print(mytuple3)
 for item in mytuple:
     print(item)
 
-
 if 1 in mytuple3:
     print("yes")
 else:
     print("NO")
-
 
 # We can not assign any new value to/in our tuple
 # mytuple[0] = "not hello" -> It will give assignment not possible error.
@@ -42,7 +40,6 @@ i1, *i2, i3 = mytuple
 print(i1)
 print(i2)
 print(i3)
-
 
 print(sys.getsizeof(mylist))
 print(sys.getsizeof(mytuple))
