@@ -138,6 +138,18 @@ dict_cpy = dict(m1)
 .issuperset() -> similarliy checks and returns boolean
 .isdisjoin()  -> Returns true if both sets don't have any common elements.
 
+
+## Copying a set (We should not use "=" to create a copy), and frozenset
+
+set_cpy = myset.copy()
+set_cpy = set(myset)
+set_cpy = myset[:]
+
+fs = frozenset([1,2,3,4])
+similar to set but it is immutable...like tuples
+so we can not use any operations like .add(),.update()....etc...
+
+
 # Numpy
 
 If module import error is comming and

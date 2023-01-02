@@ -62,3 +62,7 @@ print(diff2)
 
 odds.update(primes)
 print(odds)
+
+a = frozenset([1, 2, 3, 4])
+#a.add(3)
+print(a)
