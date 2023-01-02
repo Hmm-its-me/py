@@ -166,6 +166,20 @@ a = mystring[::-1] -> To reverse the string...
 
 s = s + s1 (Concatenation of strings)
 
+.strip()   -> Removes trailing white spaces in the string (" ")
+.upper()   -> Changes all the chars to uppercase
+.lower()   -> Changes all the chars to lowercase
+.startswith("xyz") -> Returns true or false
+.endswith("xyz")   -> .......same..........
+.find("xyz")       -> Returns the first index where it finds the substring or char "xyz"
+.count("xyz")      -> Does not count overlapping substrings...if present in the string
+.replace("xyz", "abc") -> Replaces all the instances of "xyz" with "abc";
+S.split(" ")  -> Returns a ***List*** of chars or strings...
+" ".join(list) -> Joins the chars/strings in the list into one string based on how we are joining
+
+f strings -> f"Hello How are you...{var1} Good Morning {var2}"
+
+
 # Numpy
 
 If module import error is comming and

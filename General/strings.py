@@ -40,3 +40,24 @@ print(s1.endswith("programmer"))
 
 print(s1.find('pro'))  # Returns the index at which this substring starts...
 # Returns -1 if not present in the string...
+
+print(s1)
+print(s1.count('m'))
+print(s1.count('A'))
+
+print(s1.replace('world', 'Universe'))
+print(s1)
+# Replaces all instances of 'm' with 'x';
+print(s1.replace('m', 'x'))
+
+mys = "Hello How are You?"
+m1 = mys.split(
+)  # Returns a list of strings (breaks when there is " " by default)
+print(m1)
+
+m2 = ' '.join(m1)
+print(m2)
+
+s = f"Hello how are you {3*3*3}, I am happy and I am {s2}"
+
+print(s)
