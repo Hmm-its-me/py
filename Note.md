@@ -110,6 +110,33 @@ dict_cpy = dict(m1)
 
 
 
+# Sets
+
+
+-> Unordered, mutable, No duplicates allowed
+
+.add(x)  -> To add elements into the set
+.remove(x) -> To remove this element from the set, Throws a key-value error, if the element is not present in the set.
+.discard(x) -> Removes the element if it is there in the set otherwise not...
+.clear()  -> Removes all the elements from the set and makes it empty.
+.pop()    -> Removes an arbitary element from the set, and also returns it.
+
+## The following operations will not modify our original set.
+
+.union()  -> Union of 2 sets to form a single set
+.interesection() -> Takes common elements from both the sets.
+.difference()     -> Removes elements of second set which are in 1st one and returns the 1st one after removing them.
+.symmetric_difference() -> 1st union of sets and then removes elements present commonly in both the sets from the union.
+...............................................................................
+
+
+.update() -> Updates the 1st one with same as like .union()
+.intersection_update() -> Same as .intersection() but here it updates the 1st set with common elements of both the sets.
+.difference_update() -> Same as .difference() but updates the 1st set with it.
+.symmetric_difference_update() -> 'similarily..'
+.issubset() -> Returns true or false based on 1st one is subset of 2nd one or not...
+.issuperset() -> similarliy checks and returns boolean
+.isdisjoin()  -> Returns true if both sets don't have any common elements.
 
 # Numpy
 
