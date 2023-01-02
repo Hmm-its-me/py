@@ -112,7 +112,6 @@ dict_cpy = dict(m1)
 
 # Sets
 
-
 -> Unordered, mutable, No duplicates allowed
 
 .add(x)  -> To add elements into the set
@@ -149,6 +148,23 @@ fs = frozenset([1,2,3,4])
 similar to set but it is immutable...like tuples
 so we can not use any operations like .add(),.update()....etc...
 
+
+
+# Strings
+
+-> Ordered, immutable, For Text Representation
+
+If we want to use single quote or double quote one inside another
+then we can use them symmetrically or use a \ character before the inside
+quote so that it won't interfere with the outside one.
+
+
+a = mystring[a:b]  -> a = all values in list from index a to b-1;
+a = mystring[:]    -> a = all values from start to end;
+a = mystring[a:b:c] -> a = all values in list starting from index a to b-1 with steps of 'c'; by default c = 1
+a = mystring[::-1] -> To reverse the string...
+
+s = s + s1 (Concatenation of strings)
 
 # Numpy
 
