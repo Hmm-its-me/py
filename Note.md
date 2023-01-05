@@ -180,6 +180,17 @@ S.split(" ")  -> Returns a ***List*** of chars or strings...
 f strings -> f"Hello How are you...{var1} Good Morning {var2}"
 
 
+# Collections
+
+## Counter
+
+Returns a dictionary with Elements as -> Dictionary keys and their count as dictionary values.
+
+So we can use-> .keys(), .values(), .items() like on dictionary...
+
+.most_common(x) -> Returns a list of x 1st most common tuples of the counter
+.elements()     -> Returns an iterator to travle along all the elements of the Counter along with their repetitions
+
 # Numpy
 
 If module import error is comming and
