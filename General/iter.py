@@ -60,9 +60,8 @@ for key, value in k1:
 
 # count, cycle, repeat
 
-for i in count(
-        33
-):  # starts from a number and goes upto infinity if not stopper anywhere
+# starts from a number and goes upto infinity if not stopper anywhere
+for i in count(33):
     if (i == 99):
         break
     print(i)
@@ -76,6 +75,7 @@ for i in cycle(a):
     if (i == 5):
         cn += 1
 
-for i in repeat(
-        a, 4):  # prints the container or data infinite times or unitl stopped
-    print(i)  # 2nd argument tells no.of times we need to repeat it.
+# prints the container or data infinite times or unitl stopped.
+# 2nd argument tells no.of times we need to repeat it.
+for i in repeat(a, 4):
+    print(i)
