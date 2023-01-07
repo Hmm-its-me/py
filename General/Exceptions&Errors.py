@@ -28,8 +28,24 @@ assert (x >= 0), "x should not be < 0"
 # AssertionError
 
 # We can catch exceptions with a "try and except block"...
+"""Both exceptions and errors are sub-classes of a throwable class.
+Exceptions occur during runtime and compile time."""
+"""Exceptions can be handled during runtime whereas errors can not
+be cannot be handled."""
+"""When in runtime an error occurs after passing the syntax test
+it is then called an exception or logical type error.
+Ex: AttributeError, KeyError, ImportError, IndexError, TypeError"""
 
 try:
-    k = 3 / 0
-except Exception as e:
+    k = 3 / 1
+    b = k + 3
+except ZeroDivisionError as e:
     print(e)
+except TypeError as e:
+    print(e, "here")
+else:
+    print("No errors found, Evertyhing is fine.")
+finally:
+    print("Generally this is used to make some cleaning up...🤔")
+# The finally clause runs always no matter if there was an exception or not.
+"""Defining our own error class"""
