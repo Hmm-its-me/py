@@ -49,3 +49,33 @@ finally:
     print("Generally this is used to make some cleaning up...🤔")
 # The finally clause runs always no matter if there was an exception or not.
 """Defining our own error class"""
+
+
+class ValueHighError(Exception):
+    pass
+
+
+class ValueSmallErro(Exception):
+    def __init__(self, message, value):
+        self.message = message
+        self.value = value
+
+
+def test_num(x):
+    if (x > 100):
+        raise ValueHighError('Value is too high, Please decrease it')
+    elif (x < 5):
+        raise ValueSmallErro('Value is too small, Please increase it', x)
+
+
+try:
+    test_num(3)
+except Exception as e:
+    print(e)
+    print(e.message)
+    print(e.value)
+
+try:
+    test_num(300)
+except Exception as e:
+    print(e)
