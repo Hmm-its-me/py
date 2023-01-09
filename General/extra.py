@@ -26,10 +26,9 @@ print(
     sqrt(num), floor(3.7), ceil(4.000000000000001)
 )  # Here if i keep >= 15 zeros before 1 it is giving 4 only as the answer...
 
-name = input("Please Enter your name: ")
-age = int(input("How old are you? "))
-
-print("Heyy! " + name + f" So you are {age} years old 😄")
+# name = input("Please Enter your name: ")
+# age = int(input("How old are you? "))
+# print("Heyy! " + name + f" So you are {age} years old 😄")
 
 l1 = [1, 2, 3, 4, 5]
 l2 = [6, 7, 8, 9]
@@ -69,3 +68,86 @@ def say_hello(name):
 
 say_hi("suraj")
 print(say_hello("sijafdl"))
+
+
+def cube(num):
+    return pow(num, 3)
+    print("came here")
+
+
+print(cube(3))
+res = cube(4)
+print(res)
+
+is_tall = True
+is_male = False
+
+if (is_tall and is_male):
+    print("He is a tall male")
+elif (is_tall):
+    print("She is a tall woman")
+elif (is_male):
+    print("He is a short male")
+else:
+    print("She is a short woman")
+
+# Fn to find the max number among the given 3 numbers
+
+
+def max_num(a, b, c):
+    if (a >= b and a >= c):
+        return a
+    elif (b >= a and b >= c):
+        return b
+    else:
+        return c
+
+
+print(max_num(1, 2, 3))
+max_num(9, 7, 3)  # -> Does not print anything for this
+print(max_num(4, 5, 3))
+
+
+def simp_calc():
+    a = float(input("Enter the 1st number: "))
+    b = float(input("Enter the second number: "))
+    op = input("Enter the operation you want to perform on the numbers?")
+
+    if (op == '+'):
+        return a + b
+    elif (op == '*'):
+        return a * b
+    elif (op == '-'):
+        return a - b
+    elif (op == '/'):
+        return a / b
+    elif (op == '%'):
+        return a % b
+    else:
+        return "Invalid operator"
+
+
+print(simp_calc())
+
+months = {
+    "jan": "January",
+    "feb": "February",
+    "mar": "March",
+    "apr": "April",
+    "may": "May",
+    "jun": "June",
+    "jul": "July",
+    "aug": "August",
+    "sep": "September",
+    "oct": "October",
+    "nov": "Novemeber",
+    "dec": "December"
+}
+
+print(months["nov"])
+# Using .get(key,default value) we can give a default value for any key...
+print(
+    months.get(
+        "sljfkda",
+        "This is the default value we can give, when we don't find the key in the dictionary..."
+    ))

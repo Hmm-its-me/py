@@ -1,5 +1,6 @@
 m1 = {"name": "Suraj", "Age": 19, "City": "Ongole"}
-
+# .get() in extra.py,
+# it will help to give a default value to the key
 print(m1["name"])
 m1["new pair"] = "value"
 print(m1)
