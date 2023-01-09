@@ -151,3 +151,29 @@ print(
         "sljfkda",
         "This is the default value we can give, when we don't find the key in the dictionary..."
     ))
+
+for i in range(len(l1)):
+    print(l1[i])
+
+for i in l1:
+    print(i)
+
+for i in range(len("Sai Suraj")):
+    if (i == 0):
+        print("First Iteration", )
+    else:
+        print("Not first")
+
+ll = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [0]]
+
+print(ll[0][2], ll[2][1])
+
+for i in range(len(ll)):
+    for j in range(len(ll[i])):
+        print(ll[i][j], end=" ")
+
+# Or we can also do like this...
+print('\n')
+for i in ll:
+    for j in i:
+        print(j, end=" ")
