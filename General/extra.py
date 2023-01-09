@@ -30,3 +30,42 @@ name = input("Please Enter your name: ")
 age = int(input("How old are you? "))
 
 print("Heyy! " + name + f" So you are {age} years old 😄")
+
+l1 = [1, 2, 3, 4, 5]
+l2 = [6, 7, 8, 9]
+
+l1.extend(l2)  # Can be used to easily combine 2 lists together.
+print(l1, l2)
+
+l1.append(10)  # Adds a new value to the end of the list.
+print(l1)
+
+l1.insert(2, 27)  # Inserts a new value at any position of the list.
+print(l1)
+
+l2.extend([1, 2, 3])
+l2.sort()
+print(l2)
+l2.extend([-1, -2, -3])
+l3 = sorted(l2)
+"""The difference between .sort() and sorted(...) can be seen here."""
+print(l3, l2)
+
+# sorted(...) function returns -> a new sequence type containing a sorted version of the given sequence
+# Where as .sort() fn returns nothing but makes changes to the original sequence itself.
+
+coordinates = [(2, 3), (-1, -1), (-3, 6), (33, 80)]
+print(coordinates[-3])
+
+
+# functions
+def say_hi(name):
+    print(f"Heyy, {name}, How are you?")
+
+
+def say_hello(name):
+    return f"Heyy, {name}, You look great."
+
+
+say_hi("suraj")
+print(say_hello("sijafdl"))
